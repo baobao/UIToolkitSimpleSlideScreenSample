@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Template name="ScreenA" src="ScreenA.uxml" />
+    <ui:Template name="ScreenB" src="ScreenB.uxml" />
+    <ui:Template name="ScreenC" src="ScreenC.uxml" />
+    <Style src="/Assets/Sample/Uss/Common.uss" />
+    <SampleScreenManager class="screen">
+        <ui:Instance template="ScreenA" class="screen" />
+        <ui:Instance template="ScreenB" class="screen" />
+        <ui:Instance template="ScreenC" class="screen" />
+        <ui:VisualElement name="menu" style="height: 120px; position: absolute; bottom: 0; background-color: rgb(190, 190, 190); width: 100%; flex-direction: row; left: 1px; align-items: center;">
+            <ui:Button text="A" display-tooltip-when-elided="True" name="A" class="menu-button" />
+            <ui:Button text="B" display-tooltip-when-elided="True" name="B" class="menu-button" />
+            <ui:Button text="C" display-tooltip-when-elided="True" name="C" class="menu-button" />
+        </ui:VisualElement>
+    </SampleScreenManager>
+</ui:UXML>

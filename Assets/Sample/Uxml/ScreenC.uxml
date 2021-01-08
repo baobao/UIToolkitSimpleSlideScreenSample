@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/Sample/Uss/Common.uss" />
+    <ScreenC name="ScreenC" class="screen">
+        <ui:VisualElement name="bg-c" class="screen">
+            <ui:Label text="Screen C" display-tooltip-when-elided="True" name="A" class="screen-label" />
+        </ui:VisualElement>
+    </ScreenC>
+</ui:UXML>
